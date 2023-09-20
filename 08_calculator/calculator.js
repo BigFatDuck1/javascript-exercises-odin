@@ -1,4 +1,12 @@
-const add = function() {
+const add = function(...arg) {
+
+  let result = 0;
+
+  for (i of arg) {
+    result += i;
+  }
+
+  return result;
 	
 };
 
