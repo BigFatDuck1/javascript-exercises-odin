@@ -1,4 +1,8 @@
-const palindromes = function () {
+const palindromes = function (str) {
+
+    //Remove space and punctuation
+    let modified_string = str;
+    modified_string = modified_string.split("");
 
 };
 
