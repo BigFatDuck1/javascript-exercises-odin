@@ -13,12 +13,22 @@ const palindromes = function (str) {
             return item;
         }
     })
-
-    return modified_string;
+    //Reverse the string
+    let reversed_string = [];
+    for (i = modified_string.length - 1; i >= 0; i--) {
+        reversed_string.push(modified_string[i]);
+    }
+    //Compare both 
+    if (reversed_string.toString() == modified_string.toString()) {
+        return true;
+    }
+    else {
+        return false;
+    }
 
 };
 
-console.log(palindromes("A car, a man, a maraca."));
+console.log(palindromes("123321"));
 
 // Do not edit below this line
 module.exports = palindromes;
